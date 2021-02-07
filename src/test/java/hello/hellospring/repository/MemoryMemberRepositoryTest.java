@@ -14,9 +14,10 @@ class MemoryMemberRepositoryTest {
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
     @AfterEach  //테스트 하나씩 끝날 때마다 실행되는 콜백
-    public void afterEach(){
+    public void afterEach()  {
         repository.clearStore();
     }
+
     @Test
     public void save(){
         Member member = new Member();
